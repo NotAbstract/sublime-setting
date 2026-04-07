@@ -1,0 +1,44 @@
+[
+    // manim
+	{ "keys": ["shift+ctrl+r"], "command": "manim_run_scene" },
+    { "keys": ["ctrl+r"], "command": "manim_checkpoint_paste" },
+    { "keys": ["ctrl+t"], "command": "manim_skipped_checkpoint_paste" },
+    { "keys": ["ctrl+y"], "command": "manim_recorded_checkpoint_paste" },
+    { "keys": ["ctrl+alt+/"], "command": "comment_fold"},
+    { "keys": ["ctrl+shift+e"], "command": "manim_exit" },
+    { "keys": ["ctrl+="], "command": "launch_venv_quick_new_window" },
+
+    { "keys": ["ctrl+w"], "command": "copy_file_directory"},
+    { "keys": ["ctrl+-"], "command": "open_file_directory" },
+
+    { "keys": ["ctrl+b"], "command": "build_wrapper" },
+    { "keys": ["ctrl+q"], "command": "copy_and_run" },
+    { "keys": ["ctrl+right"], "command": "focus_window","args": {"direction":"right"}},
+    { "keys": ["ctrl+left"], "command": "focus_window","args": {"direction":"left"} },
+
+    // { "keys": ["ctrl+q"], "command": "focus_window","args": {"direction":"PygletWindow"} },
+    { "keys": ["ctrl+shift+a"], "command": "align_equals" },
+    // goto
+
+    { "keys": ["ctrl+up"], "command": "jump_back" },
+    { "keys": ["ctrl+down"], "command": "jump_forward" },
+
+    { "keys": ["shift+up"], "command": "move", "args": {"by": "wholelines", "forward": false, "extend": true} },
+    { "keys": ["shift+down"], "command": "move", "args": {"by": "wholelines", "forward": true, "extend": true} },
+
+    { "keys": ["ctrl+shift+d"], "command": "duplicate_line" },
+    { "keys": ["ctrl+shift+c"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    
+    { "keys": ["ctrl+d"], "command": "find_under_expand" },
+    { "keys": ["ctrl+e"], "command": "find_prev_expand" },
+    // bookmark
+
+    { "keys": ["f1"], "command": "toggle_bookmark", "args": {"toggle_line": true } },
+    { "keys": ["shift+f1"], "command": "clear_bookmarks" },
+    { "keys": ["f2"], "command": "prev_bookmark" },
+    { "keys": ["f3"], "command": "next_bookmark" },
+
+    {"keys": ["keypad_enter"],"command": "terminus_keypress","args": { "key": "enter" },
+    "context": [{ "key": "terminus_view", "operator": "equal", "operand": true }] },
+
+]
